@@ -1,0 +1,18 @@
+{
+    "suggest.autoTrigger": "none",
+    "suggest.timeout": 1,
+    "coc.source.OmniSharp.enable" : true,
+    "coc.source.OmniSharp.triggerCharacters": ".",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "rust"
+    ],
+    "tsserver.formatOnType": false,
+    "coc.preferences.formatOnType": true,
+    "diagnostic.errorSign": "!!",
+    "diagnostic.warningSign": "•",
+    "diagnostic.infoSign": "•"
+}
