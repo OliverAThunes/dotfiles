@@ -82,7 +82,7 @@ highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 
 " Clear comments
-"highlight Comment ctermfg=yellow guifg=yellow
+highlight Comment ctermfg=yellow guifg=yellow
 
 " Sensible tabs
 set tabstop=4
@@ -115,6 +115,8 @@ let g:dart_format_on_save = 1
 
 " lens.vim
 let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
+
+" harpoon.vim
 
 " Custom keybinds
 nnoremap <space> <nop>

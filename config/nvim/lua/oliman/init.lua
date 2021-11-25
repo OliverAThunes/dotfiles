@@ -1,6 +1,6 @@
 require("oliman.telescope")
 --require("theprimeagen.git-worktree")
---require("theprimeagen.harpoon")
+require("oliman.harpoon")
 --require("theprimeagen.lsp")
 --require("theprimeagen.statusline")
 

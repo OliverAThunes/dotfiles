@@ -4,11 +4,12 @@
     "coc.source.OmniSharp.enable" : true,
     "coc.source.OmniSharp.triggerCharacters": ".",
     "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "javascriptreact",
+        "javascript__",
+        "javascriptreact__",
         "typescript",
         "typescriptreact",
-        "rust"
+        "rust",
+        "php"
     ],
     "tsserver.formatOnType": false,
     "coc.preferences.formatOnType": true,
