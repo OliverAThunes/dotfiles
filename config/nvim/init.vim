@@ -53,9 +53,9 @@ call plug#end()
 
 set t_Co=256
 
-if (has("termguicolors"))
-    set termguicolors
-end
+"if (has("termguicolors"))
+    "set termguicolors
+"end
 
 syntax enable
 "colorscheme dracula
@@ -77,11 +77,12 @@ hi Cursor     guifg=#191970 guibg=#41FF41
 " Nice with gruvbox
 "highlight Normal ctermbg=black guibg=#000000
 
-
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
+highlight clear LineNr
+highlight clear SignColumn
 
-" Clear comments
+" Visible comments
 highlight Comment ctermfg=yellow guifg=yellow
 
 " Sensible tabs
