@@ -1,0 +1,5 @@
+[user]
+	email = oliver@netron.no
+	name = Oliver Andreas Thunæs
+[core]
+	editor = nvim

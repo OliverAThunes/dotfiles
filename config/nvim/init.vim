@@ -70,24 +70,25 @@ colorscheme OceanicNext
 "set background=dark " Setting dark mode
 
 " Use these settings with dracula for the best results
-hi Visual     guifg=#282A36 guibg=#F1FA8C gui=none
-hi CursorLine guifg=none guibg=#191970
-hi Cursor     guifg=#191970 guibg=#41FF41
+"hi Visual     guifg=#282A36 guibg=#F1FA8C gui=none
+"hi CursorLine guifg=none guibg=#191970
+"hi Cursor     guifg=#191970 guibg=#41FF41
 
 " Nice with gruvbox
 "highlight Normal ctermbg=black guibg=#000000
 
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-highlight clear LineNr
-highlight clear SignColumn
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+hi EndOfBuffer ctermbg=none
+hi clear LineNr
+hi clear SignColumn
 
 " Visible comments
 highlight Comment ctermfg=yellow guifg=yellow
 
 " Sensible tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smartindent
 
@@ -170,6 +171,7 @@ set autoread
 set number
 set relativenumber
 tnoremap <Esc> <C-\><C-n>
+set ttimeoutlen=100
 
 set cursorline
 
@@ -356,13 +358,12 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 
 set statusline=%f               " filename relative to current $PWD
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 set statusline+=%h              " help file flag
 set statusline+=%m              " modified flag
 set statusline+=%r              " readonly flag
 set statusline+=\ [%{&ff}]      " Fileformat [unix]/[dos] etc...
 set statusline+=\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})  " last modified timestamp
-"set statusline+=%{gutentags#statusline()}
 set statusline+=%=              " Rest: right align
 set statusline+=%l,%c           " Position in buffer: linenumber, column, virtual column
 set statusline+=\ %P            " Position in buffer: Percentage
