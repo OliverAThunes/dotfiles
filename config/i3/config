@@ -198,15 +198,16 @@ new_window none
 # finds out, if available)
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    tray_output DP-1
 
-	colors {
-		background $inactive-bg-color
-	    	separator #757575
-		#                  border             background         text
-		focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
+  	colors {
+  		background $inactive-bg-color
+  	    	separator #757575
+  		#                  border             background         text
+  		focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
+  		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+  		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+  	}
 
     position top
 

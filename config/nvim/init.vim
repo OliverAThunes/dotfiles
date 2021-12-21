@@ -13,7 +13,6 @@ Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'kyazdani42/nvim-web-devicons'
 
 " Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -48,6 +47,9 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'arcticicestudio/nord-vim'
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'mhartington/oceanic-next'
+
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -264,7 +266,7 @@ set cmdheight=2
 set shortmess+=c
 
 
-set encoding=utf-8
+set encoding=UTF-8
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
