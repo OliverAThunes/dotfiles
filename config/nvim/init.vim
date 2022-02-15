@@ -24,8 +24,9 @@ Plug 'mhinz/vim-signify'
 Plug 'lambdalisue/vim-fullscreen'
 "Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
-Plug 'github/copilot.vim'
+"Plug 'github/copilot.vim'
 
+" Language framework related plugins
 Plug 'habamax/vim-godot'
 Plug 'rust-lang/rust.vim'
 Plug 'ron-rs/ron.vim'
@@ -40,6 +41,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'honza/vim-snippets'
 Plug 'morgsmccauley/vim-react-native-snippets'
 
+" Themes
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nightsense/rusticated'
 Plug 'morhetz/gruvbox'
@@ -62,11 +64,11 @@ set t_Co=256
 syntax enable
 "colorscheme dracula
 "colorscheme rusticated
-"colorscheme gruvbox
+colorscheme gruvbox
 "colorscheme PaperColor
 "colorscheme nord
 "colorscheme happy_hacking
-colorscheme OceanicNext
+"colorscheme OceanicNext
 
 "set background=light " Setting light mode
 "set background=dark " Setting dark mode
@@ -79,8 +81,9 @@ colorscheme OceanicNext
 " Nice with gruvbox
 "highlight Normal ctermbg=black guibg=#000000
 
-hi Normal ctermbg=none
-hi NonText ctermbg=none
+
+hi Normal ctermbg=none guibg=none
+hi NonText ctermbg=none guibg=none
 hi EndOfBuffer ctermbg=none
 hi clear LineNr
 hi clear SignColumn
@@ -104,7 +107,7 @@ set noerrorbells
 set scrolloff=12
 set sidescrolloff=12
 set signcolumn=yes
-set colorcolumn=80
+set colorcolumn=100
 set nohlsearch
 set mouse=a
 
@@ -193,15 +196,15 @@ map <F7> :e ~/.config/nvim/init.vim<CR>
 map <F8> :e ~/notes/<CR>
 
 " Highlight TODO, FIXME, NOTE, etc.
-"if has('autocmd') && v:version > 701
-    "augroup todo
-        "autocmd!
-        "autocmd Syntax * call matchadd(
-                    "\ 'Debug',
-                    "\ '\c\v\W\zs<(NOTE|INFO|IDEA|TODO|FIXME|CHANGED|XXX|BUG|HACK|TRICKY|INCOMPLETE)>'
-                    "\ )
-    "augroup END
-"endif
+if has('autocmd') && v:version > 701
+    augroup todo
+        autocmd!
+        autocmd Syntax * call matchadd(
+                    \ 'Debug',
+                    \ '\c\v\W\zs<(NOTE|INFO|IDEA|TODO|FIXME|CHANGED|XXX|BUG|HACK|TRICKY|INCOMPLETE)>'
+                    \ )
+    augroup END
+endif
 
 " coc-snippets
 
@@ -369,6 +372,6 @@ set statusline+=\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})  
 set statusline+=%=              " Rest: right align
 set statusline+=%l,%c           " Position in buffer: linenumber, column, virtual column
 set statusline+=\ %P            " Position in buffer: Percentage
-set statusline+=\ %{strftime('%H:%M')} " Clock
+"set statusline+=\ %{strftime('%H:%M')} " Clock
 
 set updatetime=100

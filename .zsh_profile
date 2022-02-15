@@ -12,3 +12,5 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH=~/usr/bin/android-studio/bin:$PATH
 
+bindkey -s ^f "tmux-sessionizer\n"
+
