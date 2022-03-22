@@ -1,0 +1,26 @@
+Device 'Logitech MX Master 3':
+	Device Enabled (155):	1
+	Coordinate Transformation Matrix (157):	1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
+	libinput Natural Scrolling Enabled (291):	0
+	libinput Natural Scrolling Enabled Default (292):	0
+	libinput Scroll Methods Available (293):	0, 0, 1
+	libinput Scroll Method Enabled (294):	0, 0, 0
+	libinput Scroll Method Enabled Default (295):	0, 0, 0
+	libinput Button Scrolling Button (296):	2
+	libinput Button Scrolling Button Default (297):	2
+	libinput Middle Emulation Enabled (298):	0
+	libinput Middle Emulation Enabled Default (299):	0
+	libinput Accel Speed (300):	-0.330882
+	libinput Accel Speed Default (301):	0.000000
+	libinput Accel Profiles Available (302):	1, 1
+	libinput Accel Profile Enabled (303):	0, 1
+	libinput Accel Profile Enabled Default (304):	1, 0
+	libinput Left Handed Enabled (305):	0
+	libinput Left Handed Enabled Default (306):	0
+	libinput Send Events Modes Available (276):	1, 0
+	libinput Send Events Mode Enabled (277):	0, 0
+	libinput Send Events Mode Enabled Default (278):	0, 0
+	Device Node (279):	"/dev/input/event8"
+	Device Product ID (280):	1133, 16514
+	libinput Drag Lock Buttons (307):	<no items>
+	libinput Horizontal Scroll Enabled (308):	1
