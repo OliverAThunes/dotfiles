@@ -227,7 +227,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Run xautolock at startup
-exec_always "xautolock -detectsleep -time 10 -locker \"~/.config/i3/lock.sh\""
+exec_always "xautolock -detectsleep -time 15 -locker \"~/.config/i3/lock.sh\""
 
 bindsym Shift+Print exec flameshot full
 bindsym Print exec flameshot gui
