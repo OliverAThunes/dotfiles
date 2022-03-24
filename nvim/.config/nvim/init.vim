@@ -40,6 +40,7 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'honza/vim-snippets'
 Plug 'morgsmccauley/vim-react-native-snippets'
+Plug 'leafOfTree/vim-svelte-plugin'
 
 " Themes
 Plug 'dracula/vim', { 'as': 'dracula' }
