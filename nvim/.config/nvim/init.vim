@@ -63,9 +63,9 @@ set t_Co=256
 "end
 
 syntax enable
-"colorscheme dracula
+colorscheme dracula
 "colorscheme rusticated
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme PaperColor
 "colorscheme nord
 "colorscheme happy_hacking
@@ -139,6 +139,19 @@ nnoremap <silent> <leader>r+ :vertical resize +10<CR>
 nnoremap <silent> <leader>r- :vertical resize -10<CR>
 nnoremap <silent> <c-x> ic-x<esc><CR>
 
+" Thanks prime!
+nnoremap n nzzzv
+nnoremap N Nzzzv
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
+"vnoremap J :m '>+1<CR>gv=gv' " These ones don't work that well
+"vnoremap K :m '<-2<CR>gv=gv'
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
 
 " Nerdtree stuff
 nnoremap <silent> <leader>pn :NERDTree<enter>
