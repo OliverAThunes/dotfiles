@@ -150,8 +150,8 @@ nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 "vnoremap J :m '>+1<CR>gv=gv' " These ones don't work that well
 "vnoremap K :m '<-2<CR>gv=gv'
-nnoremap <leader>j :m .+1<CR>==
-nnoremap <leader>k :m .-2<CR>==
+"nnoremap <leader>j :m .+1<CR>==
+"nnoremap <leader>k :m .-2<CR>==
 
 " Nerdtree stuff
 nnoremap <silent> <leader>pn :NERDTree<enter>
