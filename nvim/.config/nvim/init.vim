@@ -22,8 +22,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
 Plug 'lambdalisue/vim-fullscreen'
-"Plug 'camspiers/animate.vim'
-Plug 'camspiers/lens.vim'
 "Plug 'github/copilot.vim'
 
 " Language framework related plugins
