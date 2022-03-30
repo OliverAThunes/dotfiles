@@ -277,7 +277,7 @@ set nobackup
 set nowritebackup
 
 " Better display for messages
-set cmdheight=2
+set cmdheight=1
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
