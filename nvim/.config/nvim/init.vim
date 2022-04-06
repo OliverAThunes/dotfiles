@@ -61,9 +61,9 @@ set t_Co=256
 "end
 
 syntax enable
-colorscheme dracula
+"colorscheme dracula
 "colorscheme rusticated
-"colorscheme gruvbox
+colorscheme gruvbox
 "colorscheme PaperColor
 "colorscheme nord
 "colorscheme happy_hacking
@@ -81,9 +81,9 @@ colorscheme dracula
 "highlight Normal ctermbg=black guibg=#000000
 
 
-hi Normal ctermbg=none guibg=none
-hi NonText ctermbg=none guibg=none
-hi EndOfBuffer ctermbg=none
+"hi Normal ctermbg=none guibg=none
+"hi NonText ctermbg=none guibg=none
+"hi EndOfBuffer ctermbg=none
 hi clear LineNr
 hi clear SignColumn
 
