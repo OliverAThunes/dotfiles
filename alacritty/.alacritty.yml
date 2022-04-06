@@ -33,5 +33,5 @@ font:
 
 colors.transparent_background_colors: true
 #window.opacity: 0.2
-background_opacity: 0.75
+background_opacity: 1.0
 

@@ -17,7 +17,7 @@ font pango:System San Francisco Display 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 10
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -175,7 +175,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
 # Colours
 set $bg-color               #4C5365
 set $inactive-bg-color      #2f343f
@@ -190,9 +189,10 @@ client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #688BA7
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #688BA7
 
-hide_edge_borders both
+#hide_edge_borders both
 
-new_window none
+default_floating_border normal
+default_border pixel 1
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -200,18 +200,18 @@ bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
     tray_output DP-1
 
-  	colors {
-  		background $inactive-bg-color
-  	    	separator #757575
-  		#                  border             background         text
-  		focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
-  		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-  		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-  	}
+    colors {
+      #background $inactive-bg-color
+          #separator #757575
+      #                  border             background         text
+      #focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
+      #inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+      #urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+    }
 
-    position top
+    #position top
 
-    font pango: DejaVu Sans Mono 10
+    #font pango: DejaVu Sans Mono 11
 }
 
 
