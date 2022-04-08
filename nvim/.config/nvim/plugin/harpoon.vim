@@ -5,7 +5,7 @@ lua require("oliman")
 " This just means I can crush, with opposite hand, the 4 terminal positions
 "
 " These functions are stored in harpoon.  A plugn that I am developing
-nnoremap <silent><leader>f :lua require("harpoon.mark").add_file()<CR>
+nnoremap <silent><leader>s :lua require("harpoon.mark").add_file()<CR>
 nnoremap <silent><C-s> :lua require("harpoon.ui").toggle_quick_menu()<CR>
 nnoremap <silent><leader>tc :lua require("harpoon.cmd-ui").toggle_quick_menu()<CR>
 

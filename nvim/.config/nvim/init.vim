@@ -56,14 +56,14 @@ call plug#end()
 
 set t_Co=256
 
-"if (has("termguicolors"))
-    "set termguicolors
-"end
+if (has("termguicolors"))
+    set termguicolors
+end
 
 syntax enable
-"colorscheme dracula
+colorscheme dracula
 "colorscheme rusticated
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme PaperColor
 "colorscheme nord
 "colorscheme happy_hacking
