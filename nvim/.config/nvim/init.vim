@@ -22,8 +22,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
 Plug 'lambdalisue/vim-fullscreen'
-"Plug 'github/copilot.vim'
- Plug 'itchyny/lightline.vim'
+Plug 'github/copilot.vim'
+Plug 'itchyny/lightline.vim'
 
 " Language framework related plugins
 Plug 'habamax/vim-godot'
