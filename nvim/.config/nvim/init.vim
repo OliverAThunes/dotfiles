@@ -23,6 +23,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
 Plug 'lambdalisue/vim-fullscreen'
 "Plug 'github/copilot.vim'
+ Plug 'itchyny/lightline.vim'
 
 " Language framework related plugins
 Plug 'habamax/vim-godot'
@@ -48,6 +49,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'arcticicestudio/nord-vim'
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'mhartington/oceanic-next'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
@@ -60,8 +62,14 @@ if (has("termguicolors"))
     set termguicolors
 end
 
+let g:javascript_plugin_jsdoc = 1
+
+let g:material_terminal_italics = 1
+let g:lightline = { 'colorscheme': 'material_vim' }
+
 syntax enable
-colorscheme dracula
+"colorscheme dracula
+colorscheme material
 "colorscheme rusticated
 "colorscheme gruvbox
 "colorscheme PaperColor
@@ -73,7 +81,7 @@ colorscheme dracula
 "set background=dark " Setting dark mode
 
 " Use these settings with dracula for the best results
-"hi Visual     guifg=#282A36 guibg=#F1FA8C gui=none
+hi Visual     guifg=#282A36 guibg=#F1FA8C gui=none
 "hi CursorLine guifg=none guibg=#191970
 "hi Cursor     guifg=#191970 guibg=#41FF41
 
@@ -86,6 +94,7 @@ colorscheme dracula
 "hi EndOfBuffer ctermbg=none
 hi clear LineNr
 hi clear SignColumn
+
 
 " Visible comments
 highlight Comment ctermfg=yellow guifg=yellow
