@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:System San Francisco Display 10
+font pango: System San Francisco Display 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -201,17 +201,19 @@ bar {
     tray_output DP-1
 
     colors {
-      #background $inactive-bg-color
-          #separator #757575
-      #                  border             background         text
-      #focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
-      #inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-      #urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+      background $inactive-bg-color
+          separator #757575
+                        #border             background         text
+      focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
+      inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+      urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     }
 
     #position top
 
-    #font pango: DejaVu Sans Mono 10
+    font pango: DejaVu Sans Mono 10
+
+    output primary
 }
 
 
@@ -233,20 +235,18 @@ bindsym Shift+Print exec flameshot full
 bindsym Print exec flameshot gui
 
 # Launch polybar
-#exec "~/.config/i3/launch_polybar.sh"
+#exec_always "~/.config/i3/launch_polybar.sh"
 
 # Gaps
-gaps inner 20
-gaps outer 20
-
-#border_radius 10
+gaps inner 5
+gaps outer 10
 
 # Picom
 #exec --no-startup-id picom --experimental-backends --backend glx --xrender-sync-fence
-exec --no-startup-id picom -CGb
+exec_always --no-startup-id picom -CGb
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Documents/Wallpapers/forest-fox-wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/Documents/Wallpapers/2201021.png
 
 # Mouse sensitivity
 exec_always xinput set-prop 8 303 0, 1
