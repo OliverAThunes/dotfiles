@@ -202,7 +202,7 @@ bar {
 
     colors {
       background $inactive-bg-color
-          separator #757575
+      separator #757575
                         #border             background         text
       focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
       inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
@@ -212,8 +212,6 @@ bar {
     #position top
 
     font pango: DejaVu Sans Mono 10
-
-    output primary
 }
 
 
