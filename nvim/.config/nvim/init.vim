@@ -178,6 +178,20 @@ nnoremap <silent> <leader>1 :only<CR>
 nnoremap <silent> <leader>2 :split<CR>
 nnoremap <silent> <leader>3 :vsp<CR>
 
+set clipboard+=unnamedplus
+
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+" " Paste from clipboard
+nnoremap <leader>pp "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
 set splitbelow
 set splitright
 

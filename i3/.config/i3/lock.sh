@@ -1,7 +1,7 @@
 #!/bin/sh
 
 i3lock \
---blur 15 \
+--blur 3 \
 --bar-indicator \
 --bar-pos y+h \
 --bar-direction 1 \
