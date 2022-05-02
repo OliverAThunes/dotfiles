@@ -215,7 +215,7 @@ bar {
 
 
 # Mulit monitor madness!
-exec "~/.config/i3/position_monitors.sh"
+exec_always "~/.config/i3/position_monitors.sh"
 
 # Lock screen binding
 bindsym $mod+Control+l exec "~/.config/i3/lock.sh"
@@ -243,7 +243,7 @@ gaps outer 10
 exec_always --no-startup-id picom -CGb
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Documents/Wallpapers/2201021.png
+exec_always --no-startup-id feh --bg-center ~/Documents/Wallpapers/2201021.png
 
 # Mouse sensitivity
 exec_always xinput --set-prop 8 'libinput Accel Profile Enabled' 0, 1
