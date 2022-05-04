@@ -1,7 +1,8 @@
 #!/bin/sh
 
 i3lock \
---blur 3 \
+-t \
+-i $HOME/Documents/Wallpapers/lockscreen.png \
 --bar-indicator \
 --bar-pos y+h \
 --bar-direction 1 \

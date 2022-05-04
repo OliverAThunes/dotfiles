@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+URL=$1
+FILENAME=$2
+FILETYPE=$3
+curl $URL | convert - $FILENAME.$FILETYPE
