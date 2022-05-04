@@ -29,7 +29,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'habamax/vim-godot'
 Plug 'rust-lang/rust.vim'
 Plug 'ron-rs/ron.vim'
-Plug 'captbaritone/better-indent-support-for-php-with-html'
+"Plug 'captbaritone/better-indent-support-for-php-with-html'
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
@@ -65,11 +65,11 @@ end
 let g:javascript_plugin_jsdoc = 1
 
 let g:material_terminal_italics = 1
-let g:lightline = { 'colorscheme': 'material_vim' }
+let g:lightline = { 'colorscheme': 'dracula' }
 
 syntax enable
-"colorscheme dracula
-colorscheme material
+colorscheme dracula
+"colorscheme material
 "colorscheme rusticated
 "colorscheme gruvbox
 "colorscheme PaperColor
@@ -82,8 +82,8 @@ colorscheme material
 
 " Use these settings with dracula for the best results
 hi Visual     guifg=#282A36 guibg=#F1FA8C gui=none
-"hi CursorLine guifg=none guibg=#191970
-"hi Cursor     guifg=#191970 guibg=#41FF41
+hi CursorLine guifg=none guibg=#191970
+hi Cursor     guifg=#191970 guibg=#41FF41
 
 " Nice with gruvbox
 "highlight Normal ctermbg=black guibg=#000000
@@ -122,7 +122,7 @@ set mouse=a
 hi ColorColumn ctermbg=darkred guibg=#cc3333
 
 
-filetype plugin on
+filetype plugin indent on
 
 " Dart
 let g:dart_style_guide = 4

@@ -215,7 +215,7 @@ bar {
 
 
 # Mulit monitor madness!
-exec_always "~/.config/i3/position_monitors.sh"
+exec "~/.config/i3/position_monitors.sh"
 
 # Lock screen binding
 bindsym $mod+Control+l exec "~/.config/i3/lock.sh"
@@ -235,8 +235,8 @@ bindsym Print exec flameshot gui
 #exec_always "~/.config/i3/launch_polybar.sh"
 
 # Gaps
-gaps inner 5
-gaps outer 10
+gaps inner 10
+gaps outer 20
 
 # Picom
 #exec --no-startup-id picom --experimental-backends --backend glx --xrender-sync-fence
