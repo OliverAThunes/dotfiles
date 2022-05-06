@@ -148,7 +148,7 @@ nnoremap <silent> <c-x> ic-x<esc><CR>
 
 " Thanks prime!
 nnoremap n nzzzv
-nnoremap N Nzzzv
+nnoremap N Nzzzv,
 inoremap , ,<c-g>u
 inoremap . .<c-g>u
 inoremap ! !<c-g>u
@@ -180,13 +180,13 @@ nnoremap <silent> <leader>3 :vsp<CR>
 
 set clipboard+=unnamedplus
 
-" " Copy to clipboard
+" Copy to clipboard
 vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_
 nnoremap  <leader>y  "+y
 nnoremap  <leader>yy  "+yy
 
-" " Paste from clipboard
+" Paste from clipboard
 nnoremap <leader>pp "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
@@ -195,17 +195,9 @@ vnoremap <leader>P "+P
 set splitbelow
 set splitright
 
-" vim-fullscreen neovim-qt config
-"let g:fullscreen#start_command = "call rpcnotify(0, 'Gui', 'WindowFullScreen', 1)"
-"let g:fullscreen#stop_command = "call rpcnotify(0, 'Gui', 'WindowFullScreen', 0)"
-
 " Neovide Config
 "let g:neovide_fullscreen=v:true
 let g:neovide_cursor_vfx_mode = "railgun"
-
-
-"autocmd VimEnter * FullscreenStart
-"map <silent> <F11> :FullscreenToggle<CR>
 
 set autoread
 set number
@@ -215,11 +207,9 @@ set ttimeoutlen=100
 
 set cursorline
 
-
 au FileType rust nmap <leader>r :Format<CR>
 
 autocmd FileType rust let b:coc_root_patterns = ['Cargo.toml']
-
 
 set guifont=DejaVu\ Sans\ Mono:h12
 map <leader><F1> :GuiFont! Source\ Code\ Pro:h14<CR>
@@ -296,9 +286,6 @@ set hidden
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
-
-" Better display for messages
-set cmdheight=1
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
