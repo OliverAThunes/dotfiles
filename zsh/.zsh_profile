@@ -3,11 +3,11 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
 # Android dev stuff
-export ANDROID_HOME=$HOME/.android/sdk
-export ANDROID_SDK_ROOT=$HOME/.android/sdk
+export ANDROID_HOME=$HOME/.android
+export ANDROID_SDK_ROOT=$HOME/.android
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Docker
@@ -17,7 +17,7 @@ export PATH=$PATH:/usr/local/lib/docker/cli-plugins
 export STOW_FOLDERS="bin,i3,nvim,tmux,zsh,picom"
 export DOTFILES=$HOME/.dotfiles
 
-export PATH=~/usr/bin/android-studio/bin:$PATH
+#export PATH=~/usr/bin/android-studio/bin:$PATH
 
 bindkey -s ^f "tmux-sessionizer\n"
 
