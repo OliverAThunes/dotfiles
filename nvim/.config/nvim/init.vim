@@ -115,7 +115,7 @@ set noerrorbells
 set scrolloff=12
 set sidescrolloff=12
 set signcolumn=yes
-set colorcolumn=100
+set colorcolumn=80
 set nohlsearch
 set mouse=a
 
