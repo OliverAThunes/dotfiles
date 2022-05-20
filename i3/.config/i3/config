@@ -236,7 +236,7 @@ bindsym Print exec flameshot gui
 
 # Gaps
 gaps inner 10
-gaps outer 20
+gaps outer 15
 
 # Picom
 #exec --no-startup-id picom --experimental-backends --backend glx --xrender-sync-fence
@@ -247,7 +247,7 @@ exec_always --no-startup-id feh --bg-center ~/Documents/Wallpapers/2201021.png
 
 # Mouse sensitivity
 exec_always xinput --set-prop 8 'libinput Accel Profile Enabled' 0, 1
-#exec_always xinput set-prop 8 300 -0.330882
+exec_always xinput --set-prop 8 300 -0.330882
 
 # Key repeat
 exec_always xset r rate 175 25
