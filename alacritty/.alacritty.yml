@@ -29,7 +29,7 @@ colors:
 
 font:
   family: DejaVuSansMono Nerd Font
-  size: 10.0
+  size: 11.5
 
 colors.transparent_background_colors: true
 window.opacity: 0.2
