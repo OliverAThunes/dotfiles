@@ -4,6 +4,7 @@ set wildmenu
 " Plugins
 call plug#begin(stdpath('data') . '/plugged')
 
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -60,8 +61,9 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-" lsp-cmp
+" lsp config
 set completeopt=menu,menuone,noselect
+
 
 " Sneak
 map f <Plug>Sneak_s

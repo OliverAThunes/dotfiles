@@ -1,4 +1,4 @@
-lua require("oliman")
+lua require("oliman.harpoon")
 
 " Terminal commands
 " asdf is first through fourth finger left hand home row.

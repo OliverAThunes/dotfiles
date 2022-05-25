@@ -1,8 +1,6 @@
 require("oliman.telescope")
---require("theprimeagen.git-worktree")
 require("oliman.harpoon")
---require("theprimeagen.lsp")
---require("theprimeagen.statusline")
+require("oliman.lsp")
 
 P = function(v)
   print(vim.inspect(v))
