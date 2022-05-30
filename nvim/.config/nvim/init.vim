@@ -61,6 +61,8 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
+lua require('oliman')
+
 " lsp config
 set completeopt=menu,menuone,noselect
 
