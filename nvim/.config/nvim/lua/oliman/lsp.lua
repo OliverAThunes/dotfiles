@@ -3,51 +3,51 @@ local nvim_lsp = require("lspconfig")
 
 local cmp = require("cmp")
 local source_mapping = {
-	buffer = "[Buffer]",
-	nvim_lsp = "[LSP]",
-	nvim_lua = "[Lua]",
-	cmp_tabnine = "[TN]",
-	path = "[Path]",
+  buffer = "[Buffer]",
+  nvim_lsp = "[LSP]",
+  nvim_lua = "[Lua]",
+  cmp_tabnine = "[TN]",
+  path = "[Path]",
 }
 
 cmp.setup({
-	--snippet = {
-		--expand = function(args)
-			---- For `vsnip` user.
-			---- vim.fn["vsnip#anonymous"](args.body)
+  --snippet = {
+  --expand = function(args)
+  ---- For `vsnip` user.
+  ---- vim.fn["vsnip#anonymous"](args.body)
 
-			---- For `luasnip` user.
-			--require("luasnip").lsp_expand(args.body)
+  ---- For `luasnip` user.
+  --require("luasnip").lsp_expand(args.body)
 
-			---- For `ultisnips` user.
-			---- vim.fn["UltiSnips#Anon"](args.body)
-		--end,
-	--},
-	mapping = cmp.mapping.preset.insert({
-        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-		["<C-u>"] = cmp.mapping.scroll_docs(-4),
-		["<C-d>"] = cmp.mapping.scroll_docs(4),
-		["<C-Space>"] = cmp.mapping.complete(),
-	}),
+  ---- For `ultisnips` user.
+  ---- vim.fn["UltiSnips#Anon"](args.body)
+  --end,
+  --},
+  mapping = cmp.mapping.preset.insert({
+    ['<tab>'] = cmp.mapping.confirm({ select = true }),
+    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-d>"] = cmp.mapping.scroll_docs(4),
+    ["<C-Space>"] = cmp.mapping.complete(),
+  }),
 
-	sources = {
-		-- tabnine completion? yayaya
+  sources = {
+    -- tabnine completion? yayaya
 
-		{ name = "cmp_tabnine" },
+    { name = "cmp_tabnine" },
 
-		{ name = "nvim_lsp" },
+    { name = "nvim_lsp" },
 
-		-- For vsnip user.
-		-- { name = 'vsnip' },
+    -- For vsnip user.
+    -- { name = 'vsnip' },
 
-		-- For luasnip user.
-		--{ name = "luasnip" },
+    -- For luasnip user.
+    --{ name = "luasnip" },
 
-		-- For ultisnips user.
-		-- { name = 'ultisnips' },
+    -- For ultisnips user.
+    -- { name = 'ultisnips' },
 
-		{ name = "buffer" },
-	},
+    { name = "buffer" },
+  },
 })
 
 local function config(_config)
