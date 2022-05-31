@@ -11,18 +11,18 @@ local source_mapping = {
 }
 
 cmp.setup({
-  --snippet = {
-  --expand = function(args)
-  ---- For `vsnip` user.
-  ---- vim.fn["vsnip#anonymous"](args.body)
+  snippet = {
+    expand = function(args)
+      -- For `vsnip` user.
+      -- vim.fn["vsnip#anonymous"](args.body)
 
-  ---- For `luasnip` user.
-  --require("luasnip").lsp_expand(args.body)
+      -- For `luasnip` user.
+      --require("luasnip").lsp_expand(args.body)
 
-  ---- For `ultisnips` user.
-  ---- vim.fn["UltiSnips#Anon"](args.body)
-  --end,
-  --},
+      -- For `ultisnips` user.
+      vim.fn["UltiSnips#Anon"](args.body)
+    end,
+  },
   mapping = cmp.mapping.preset.insert({
     ['<tab>'] = cmp.mapping.confirm({ select = true }),
     ["<C-u>"] = cmp.mapping.scroll_docs(-4),
@@ -44,7 +44,7 @@ cmp.setup({
     --{ name = "luasnip" },
 
     -- For ultisnips user.
-    -- { name = 'ultisnips' },
+    { name = 'ultisnips' },
 
     { name = "buffer" },
   },
