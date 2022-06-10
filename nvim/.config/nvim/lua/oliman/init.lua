@@ -21,6 +21,9 @@ require("oliman.telescope")
 require("oliman.harpoon")
 require("oliman.lsp")
 
+-- Auto formatting on save
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
 P = function(v)
   print(vim.inspect(v))
   return v
