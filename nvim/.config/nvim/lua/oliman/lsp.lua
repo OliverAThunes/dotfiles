@@ -70,4 +70,6 @@ end
 
 nvim_lsp.intelephense.setup(config())
 nvim_lsp.tsserver.setup(config())
+nvim_lsp.rust_analyzer.setup(config())
+nvim_lsp.tailwindcss.setup(config())
 

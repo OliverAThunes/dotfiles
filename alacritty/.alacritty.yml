@@ -28,7 +28,7 @@ colors:
     white:   '0xFFFAFA'
 
 font:
-  family: DejaVuSansMono Nerd Font
+  family: SauceCodePro Nerd Font
   size: 11.5
 
 colors.transparent_background_colors: true
