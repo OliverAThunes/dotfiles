@@ -4,16 +4,20 @@ set wildmenu
 " Plugins
 call plug#begin(stdpath('data') . '/plugged')
 
+" LSP stuff
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
+Plug 'onsails/lspkind-nvim'
+Plug 'nvim-lua/lsp_extensions.nvim'
 
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'rafamadriz/friendly-snippets'
+
+Plug 'simrat39/symbols-outline.nvim'
 
 Plug 'scrooloose/nerdtree'
 Plug 'nvim-lua/popup.nvim'
@@ -36,7 +40,7 @@ Plug 'justinmk/vim-sneak'
 " Language framework related plugins
 Plug 'habamax/vim-godot'
 Plug 'rust-lang/rust.vim'
-Plug 'ron-rs/ron.vim'
+Plug 'simrat39/rust-tools.nvim'
 "Plug 'captbaritone/better-indent-support-for-php-with-html'
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
@@ -136,7 +140,7 @@ set noerrorbells
 set scrolloff=12
 set sidescrolloff=12
 set signcolumn=yes
-set colorcolumn=80
+"set colorcolumn=80
 set nohlsearch
 set mouse=a
 

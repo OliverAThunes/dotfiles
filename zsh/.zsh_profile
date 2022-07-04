@@ -13,6 +13,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Docker
 export PATH=$PATH:/usr/local/lib/docker/cli-plugins
 
+export PATH="$HOME/.local/bin:$PATH"
 
 export STOW_FOLDERS="bin,i3,nvim,tmux,zsh,picom"
 export DOTFILES=$HOME/.dotfiles
